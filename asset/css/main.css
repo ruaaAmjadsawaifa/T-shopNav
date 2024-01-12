@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eee;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+.container {
+  width: calc(100% - 120px);
+  margin: auto;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+  background: #fff;
+  padding: 12px 0px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+header .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header .logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+header .logo img {
+  width: 30px;
+}
+header .logo a {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #545be8;
+  font-weight: 700;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+header nav ul li a {
+  font-weight: 400;
+  color: #101928;
+  font-size: 13px;
+}
+header nav ul li:hover a {
+  font-weight: 700;
+  transition: 0.2s;
+}
+header .auth {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+header .auth a {
+  font-family: "Inter", sans-serif;
+  border: 0.5px solid #545be8;
+  padding: 7px 23px;
+  width: 125px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 10px;
+}
+header .auth .login {
+  color: #545be8;
+  background-color: #fff;
+}
+header .auth .register {
+  background: #545be8;
+  color: #fff;
+}
